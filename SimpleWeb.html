@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ENC222-0384/2018</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+        <div id="main" class="main text-center ">
+            <header>
+                <h1 id="title">James Ngei</h1>
+                
+                <p class="title">Mapping Defforestation</p>
+                </header>
+            <div id="img-div">
+                <figure>
+                <img id="image"  src="unt6.png" alt="image" class="responsive" style="width:100px;height:100px">
+                </figure>
+                <p id="img-caption">James</p>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'problem')">Home</button>
+                <button class="tablinks" onclick="openTab(event, 'Results')">Results</button>
+            </div>
+            <!-- Tab content -->
+            <div id="problem" class="tabcontent">
+    <p>
+        <H4>Problem statement</H4>
+        In 2010, Kenya had 3.18Mha of natural forest, extending over 5.7% of its land area. 
+        In 2020, it lost 17.2kha of natural forest, equivalent to 7.68Mt of CO₂ of emissions.
+    </p>
+</div>
+  
+  <div id="Results" class="tabcontent">
+    <h3>Results</h3>
+    <p> Explore interactive charts and maps that summarize key statistics about forests in Kenya.
+      Statistics – including rates of forest change, forest extent, drivers of deforestation, and 
+      deforestation and fire alerts – can be customized, easily shared and downloaded for offline use.
+    </p>
+  </div>
+   
+    <q>Defforestion map</q>
+
+    <blockquote> Defforestation</blockquote>
+    <footer>
+        <h4>About ME <u> <a id="tribute-link" href="About.html" target="_blank">About Me</a></u> </h4>
+    </footer>
+</div>
+</section>
+
+<script>
+    function openTab(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+</body>
